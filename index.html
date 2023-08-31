@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Student Dashboard</h1>
+  </header>
+  
+  <section class="student-details">
+    <h2>Student Details</h2>
+    <div class="student">
+      <p><strong>Name:</strong> Abiram R</p>
+      <p><strong>Department:</strong> IT AND AIML</p>
+      <p><strong>Email:</strong> abiramr2003@gmail.com</p>
+      <button class="open-club-list">Add Participation</button>
+    </div>
+  </section>
+  
+  <div class="club-list">
+    <h2>Select the Pillar</h2>
+    <ul class="clubs">
+      <li class="club-item" data-club="Programming Club">Center for Learning and Teaching (CLT)</li>
+      <li class="club-item" data-club="Art Club">Skill and Career Development (SCD)</li>
+      <li class="club-item" data-club="Sports Club">Center for Creativity (CFC)</li>
+      <li class="club-item" data-club="Music Club">Industry Institute Partnership Cell (IIPC)</li>
+      <li class="club-item" data-club="Science Club">Social Responsibility Initiatives (SRI)</li>
+    </ul>
+  </div>
+  
+  <div class="event-form">
+    <h2>Add Event</h2>
+    <form id="eventForm">
+      <input type="hidden" id="selectedClub" name="selectedClub">
+      
+      <label for="eventName">Event Name:</label>
+      <input type="text" id="eventName" name="eventName" required>
+      <label for="college">College Name:</label>
+      <input type="text" id="college" name="college" required>
+      
+      <label for="eventDate">Event Date:</label>
+      <input type="date" id="eventDate" name="eventDate" required>
+      
+      <button type="submit">Add Event</button>
+    </form>
+  </div>
+  
+</body>
+</html>
